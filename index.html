@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    </head>
+    <body>
+
+        <!--Dropdown-->
+        <div class="a-dropdown brands">
+            <select id="a_count" name="brands_count">
+                <option value="all">All Total Rewards Brands</option>
+                <option value="cp">Caesars Palace Las Vegas</option>
+                <option value="harrahs">Harrah's</option>
+                <option value="rio">Rio</option>
+            </select>
+            <span id="a_dd_num" class="dd-num">All Total Rewards Brands</span>
+           <!-- <span class="dd-text">(Label)</span>-->
+            <span class="dwn-lrg-arrow"></span>
+            <div id="a_count_display" class="a-count">
+                <div class="inner">
+                    <span class="dd-num">All Total Rewards Brands</span>
+                    <!--<span class="dd-text">(Label)</span>-->
+                    <ol id="a_display">
+                        <li>All Total Rewards Brands</li>
+                        <li>Caesars Palace Las Vegas</li>
+                        <li>Harrah's</li>
+                        <li>Rio</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!--Radio-->
+        <ul class="a-radio clearfix">
+            <li class="lowest" rel="fare_display">
+                <input type="radio" checked="checked" value="lowest" name="fare_display" id="lowest_fare">
+                <span class="radio-styled"></span><span class="radio-txt">Lowest</span>
+                <!-- #lowest_fare -->
+            </li>
+            <li class="refundable" rel="fare_display">
+                <input type="radio" value="refundable" name="fare_display" id="refundable_fare">
+                <span class="radio-styled"></span><span class="radio-txt">Refundable</span>
+                <!-- #refundable_fare -->
+            </li>
+            <li class="points" rel="fare_display">
+                <input type="radio" value="points" name="fare_display" id="points_fare">
+                <span class="radio-styled"></span><span class="radio-txt">Points</span>
+                <!-- #points_fare -->
+            </li>
+        </ul>
+
+        <!--Checkboxes-->
+        <div class="a-checkbox alerts clearfix">
+            <div class="media attribution">
+                <input type="checkbox" value="1" name="user[subscribe]" id="email-alerts">
+                <span class="checkbox-styled img"></span>
+                <div class="bd">
+                    <span class="label">Please email me communications</span>
+                </div>
+            </div>
+            <div class="media attribution">
+                <input type="checkbox" value="1" name="user[sms_alerts]" id="sms-alerts">
+                <span class="checkbox-styled img"></span>
+                <div class="bd">
+                    <span class="label">SMS alerts</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+        <script src="js/formBeautifier.js"></script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                $('select').FormBeautifier();
+                $('input').FormBeautifier();
+            });
+        </script>
+
+    </body>
+</html>
