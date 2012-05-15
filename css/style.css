@@ -1,0 +1,158 @@
+body {
+    font-family: helvetica, arial, san-serif;
+    font-size: 12px;
+    background: #f5deb3;
+}
+ol {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+
+/* Dropdown */
+.js select,
+.js input[type="radio"],
+.js input[type="checkbox"]{
+    display: none; border: 0; outline: 0;
+}
+
+.a-dropdown {
+	z-index: 1;
+	cursor: pointer;
+	position: relative;
+	float: left;
+	background: #cccccc;
+	width: 82px;
+	height: 37px;
+}
+.dd-num,
+.dd-text {
+	display: inline-block;
+	color: #4d90cd;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 12px;
+	padding-left: 20px;
+}
+.dd-text {
+	padding: 0;
+	margin: 0;
+}
+.a-dropdown {
+	width: 200px;
+}
+.a-dropdown .a-count { display: none; }
+.active .a-count {
+	z-index: 20;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background: white;
+	color: #808080;
+	width: 80px;
+	height: 204px;
+}
+.active .a-count {
+	width: 200px;
+	height: auto;
+}
+.active .a-count .inner { padding: 0; }
+.active .a-count ol { padding-bottom: 5px; }
+.active .a-count span,
+.active .a-count a {
+	float: none;
+	cursor: pointer;
+	color: #4D90CD;
+	margin: 0;
+	padding-bottom: 5px;
+}
+ .active .a-count .dd-text {
+	color: #ffffff;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+.active .a-count li {
+	font-weight: bold;
+	width: auto;
+	padding: 5px 0 5px 20px;
+}
+.active .a-count li:hover { background-color: #2e74b5; }
+.dwn-lrg-arrow {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #808080;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+/* Checkboxes */
+.a-radio { width: 297px; height: 37px; margin-top: 10px; float: left;}
+.a-radio li {
+	position: relative;
+	float: left;
+	color: #4d90cd;
+	font-weight: bold;
+	width: 85px;
+	height: 20px;
+	margin-left: 6px;
+}
+.a-radio .radio-styled,
+.a-radio .radio-styled-active,
+.a-radio .radio-styled-selected { top: 8px; }
+.radio-styled {
+    background: #cccccc;
+    cursor: pointer;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    width: 14px;
+}
+.active .radio-styled {
+    background: #808080;
+}
+.a-radio .radio-txt {
+	cursor: pointer;
+	position: absolute;
+	top: 9px;
+	left: 18px;
+}
+.a-radio .dd-num,
+.a-radio .dd-text {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 12px;
+	padding-left: 10px;
+}
+
+.a-radio .dd-text {
+	padding-left: 0;
+}
+
+/*Checkboxes*/
+.a-checkbox {
+    float: left;
+}
+.checkbox-styled {
+    background: #cccccc;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+}
+.active .checkbox-styled {
+    background: #808080;
+}
+.label {
+    color: #4D90CD;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
